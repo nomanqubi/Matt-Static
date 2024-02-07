@@ -1,0 +1,56 @@
+.FCHR {
+    outline: grey;
+}
+
+.saleImage {
+    width: 100%;
+}
+
+.product-main-section {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.product-card {
+    width: 30%;
+    height: 200px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+
+    ;
+}
+
+.images img {
+    width: 107px;
+    height: 107px;
+}
+
+@media (max-width: 600px) {
+    .product-card {
+        width: 100%;
+    }
+
+}
+
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .product-card {
+        width: 40%;
+    }
+
+    .images img {
+        width: 60px;
+        height: 80px;
+    }
+}

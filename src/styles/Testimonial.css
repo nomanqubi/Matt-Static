@@ -1,0 +1,68 @@
+.latest-reviews {
+    text-align: center;
+}
+
+.card-1{
+    background-color: #F7F7F7;
+
+}
+.card-2 {
+    background-color: #F7F7F7;
+    margin-left: 20px;
+}
+
+.card-1 {
+    border-right: 3px solid #F7941D;
+}
+
+.card-1 img,
+.card-2 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.AuthorName {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Authortag {
+    text-align: center;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.arrow .forward.clicked {
+    color: #F7941D;
+}
+
+.arrow .backward.clicked {
+    color: #F7941D;
+}
+
+hr {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Media Query for smaller screens */
+@media (min-width: 576px) and (max-width: 768px) {
+    .card-2{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 576px) {
+    .card-2{
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,104 @@
+.productsPage-slider-container{
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    background-color: #F5F5F5;
+
+    
+   
+}
+.pic-wrapper{
+    width: 50%;
+    height: 500px;
+    background-image: url("../images/CycleProduct.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.text-div{
+    width: 50%;
+        height: auto;
+        padding: 3rem 0rem 0rem 3rem;
+}
+.text-div h4{
+    font-family: Inter;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #676262;
+}
+.text-div h1{
+    font-family: Inter;
+        font-size: 55px;
+        font-weight: 500;
+        line-height: 67px;
+        letter-spacing: 0em;
+        text-align: left;
+}
+.text-div h6{
+    font-family: Inter;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+}
+
+.text-div button{
+    width:12.81rem;
+    height: 3.19rem;
+    color: white;
+    border-radius: 50px;
+    background-color: #0F75BC;
+    border: none;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    
+}
+
+
+/* Media query for screens with a max-width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .productsPage-slider-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center content */
+    }
+
+    .pic-wrapper {
+        width: 100%; /* Full width for smaller screens */
+        height: 300px; /* Adjust height as needed */
+    }
+
+    .text-div {
+        width: 100%; /* Full width for smaller screens */
+        padding: 1rem; /* Adjust padding */
+        text-align: center; /* Center text */
+    }
+
+    .text-div h4 {
+        font-size: 20px; /* Adjust font size */
+        line-height: 24px; /* Adjust line height */
+    }
+
+    .text-div h1 {
+        font-size: 40px; /* Adjust font size */
+        line-height: 50px; /* Adjust line height */
+    }
+
+    .text-div h6 {
+        font-size: 14px; /* Adjust font size */
+        line-height: 18px; /* Adjust line height */
+    }
+
+    .text-div button {
+        width: 100%; /* Full width for smaller screens */
+        margin-top: 1rem; /* Adjust margin */
+    }
+}

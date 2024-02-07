@@ -1,0 +1,187 @@
+.our-blog {
+  background-image: url(../images/OurBlog.png);
+  background-size: cover;
+  background-position: center;
+  height: 406px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.our-blog .container {
+  text-align: center;
+}
+
+.our-blog h1 {
+  color: white;
+}
+
+.our-blog p {
+  color: white;
+}
+
+ 
+ 
+ .blog-card {
+  transition: background-color 0.2s;
+}
+
+.body-card{
+  background-color: #FBFBFB;
+}
+.body-card:hover{
+  background-color: #FEEFDD,
+  
+}
+.body-card:hover .btn{
+  background-color: #F7941D;
+  color: white ;
+}
+
+.blog-card:nth-child(3n+2) .btn {
+  background: #F5F5F5;
+  color: white; 
+}
+
+
+
+.blog-card .btn {
+  width: 100%;
+  background: #F5F5F5;
+  color: black; 
+  font-weight: bold;
+}
+
+.icon-container {
+  margin-right: 10px; /* Adjust the margin value as needed */
+}
+
+.blog-button{
+  background-color: white;
+  color: grey;
+  border: none;
+  padding: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.page-number {
+  width: 30px; 
+  height: 30px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid orange;
+  border-radius: 20%; 
+  font-weight: bold;
+  color: orange;
+}
+
+.page-arrow {
+  width: 30px;
+  height: 30px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid orange;
+  border-radius: 20%;
+  font-size: 18px;
+  color: orange;
+  cursor: pointer;
+}
+
+/* BlogDetail.css */
+
+.custom-container{
+  width: 90%;
+  margin: auto;
+}
+
+.right-side-widgets {
+  padding: 20px;
+}
+
+.widget {
+  margin-bottom: 20px;
+}
+
+.widget-heading {
+  color: orange;
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+}
+
+
+.search-widget input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.person-icon{
+  background-color: white;
+}
+.post-date{
+  text-align: left;
+  margin-left: 15px;
+}
+.popular-post-details h4{
+  margin-left: 15px;
+}
+
+.categories-list {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.categories-list li {
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.category-item:hover {
+  background-color: rgba(247, 148, 29, 1); 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tags-list li:hover {
+  background-color: rgba(247, 148, 29, 1); 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-item {
+  list-style-type: none;
+  background: rgba(245, 245, 245, 1);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px #ccc;
+}
+
+.tags-list {
+  list-style-type: none;
+  padding: 0;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+
+.tags-list li {
+  margin-bottom: 10px;
+  background: rgba(245, 245, 245, 1);
+  padding: 5px;
+  box-shadow: 1px 1px 1px #ccc;
+  padding: 10px;
+  display: inline;
+  margin-right: 15px;
+  
+}
+
+

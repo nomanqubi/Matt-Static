@@ -1,0 +1,241 @@
+.service-header{
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    height: 480px;
+    margin-top: 20px;
+}
+.service-details p{
+    text-align: left;
+  }
+  
+  .service-word {
+    color: orange;
+    font-size: 24px;
+    margin-bottom: 0%;
+    margin-top: 40px;
+  }
+  
+  .service-details h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .service-image{
+    margin-left: 80px;
+  }
+
+  .card-body{
+    background-color:#F5F5F5
+  }
+  
+  /* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .service-header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .service-image {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+  
+.feature-icon {
+  color: black;
+  background: white; 
+  border-radius: 50%; 
+  box-shadow: 5px 5px 5px solid black;
+  width: 200px;
+}
+.card-body:hover{
+  border-bottom: 2px solid #F7941D;
+}
+.certified-company{
+  border-bottom:2px solid #F7941D;
+}
+.certified-company:hover{
+  border-bottom:none !important;
+}
+  
+.service-card {
+  box-shadow: 2px 2px 5px 0 rgba(255, 165, 0, 0.5);
+  position: relative;
+}
+
+.service-card:hover{
+  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0);
+}
+
+.service-card-1:hover{
+  box-shadow: 2px 2px 5px 0 rgba(255, 165, 0, 0.5);
+}
+
+.service-card-1:hover::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #F7941D;
+  border-top-right-radius: 100%;
+  transform: rotate(180deg);
+}
+
+.service-card:hover::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: rgba(247, 148, 29, 0.15);
+  border-top-right-radius: 100%;
+  transform: rotate(180deg);
+}
+
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #F7941D;
+  border-top-right-radius: 100%;
+  transform: rotate(180deg);
+}
+
+
+.service-card-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: rgba(247, 148, 29, 0.15);
+  border-top-right-radius: 100%;
+  transform: rotate(180deg);
+}
+
+
+.card-title {
+  text-align: left;
+}
+
+.card-text {
+  margin-top: 15px;
+  text-align: left;
+}
+
+/* OurPricing.css */
+.pricing-card {
+  width: 100%;
+  background: #F7941D;
+  color: white;
+}
+
+.gold-plan{
+  background-color: rgba(247, 148, 29, 1);
+}
+
+.gold-plan p{
+  color: white;
+}
+.gold-plan li{
+  color: white;
+}
+.gold-plan h3{
+  color: white;
+}
+
+.Plan-title-1, .Plan-title-3{
+  background-color: #F7941D;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.Plan-title-2{
+  background-color: #0F75BC;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.list-unstyled {
+  text-align: left;
+
+}
+
+.list-unstyled li{
+  margin-top: 10px;
+}
+
+.starting-plan-button{
+  background-color: #F7941D;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+.gold-plan-button{
+  background-color: rgba(255, 255, 255, 1);
+  color: #F7941D;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+.gold-plan-button:hover{
+  background-color:#F7941D;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.service-search-container {
+  height: 40px;
+  width: 400px;
+  background-color:#F3F3F3;
+  position: relative;
+  border-radius: 30px;
+  padding: 3px 50px 3px 10px;
+  border: 1px solid grey;
+}
+.service-Subsribe-box {
+  background-color: #F3F3F3;
+  outline: none;
+  height: 35px;
+  font-size: 15px;
+  border: 0;
+  width: 100%;
+}
+.service-button {
+  position: absolute;
+  right: 0.1px;
+  top: 0.1px;
+  background-color:#0F75BC;
+  border: 0;
+  color: #FFF;
+  width: 150px;
+  height: 40px;
+  border-radius: 40px;
+  cursor: pointer;
+
+}
+
+
+  
+/* OurTeam.css */
+
+
+.orange-text {
+  color: #F7941D;
+}
