@@ -4,9 +4,14 @@
     background-color: rgb(236, 249, 255);
 }
 
+.content{
+    display: flex;
+    align-items: center;
+}
+
 .slider-text {
-    padding-top: 160px;
-    width: 60%;
+    width: 65%;
+    text-align: left;
     font-size: xx-large;
     font-weight: bold;
     color: black;
@@ -58,19 +63,22 @@
 
 @media (min-width: 1200px) and (max-width: 1400px) {
     .slider-text {
-        padding-top: 110px;
-        width: 70%;
+        width: 75%;
+        text-align: left;
         font-size: xx-large;
         font-weight: bold;
+        color: black;
     }
+    
 } 
 
 @media (min-width: 992px) and (max-width: 1200px) {
     .slider-text {
-        padding-top: 110px;
-        width: 90%;
+        width: 85%;
+        text-align: left;
         font-size: xx-large;
         font-weight: bold;
+        color: black;
     }
     .collection-button {
         width: 200px;
@@ -86,10 +94,11 @@
 
 @media (min-width: 768px) and (max-width: 992px) {
     .slider-text {
-        padding-top: 65px;
         width: 100%;
+        text-align: justify;
         font-size: xx-large;
         font-weight: bold;
+        color: black;
     }
     .collection-button {
         width: 200px;
@@ -108,14 +117,13 @@
         margin-top: 30px;
     }
     .slider-text {
-        padding-top: 30px;
-        display: flex;
-        justify-content: center;
-        text-align: justify;
-        width: 80%;
+        width: 100%;
+        text-align: left;
         font-size: xx-large;
         font-weight: bold;
+        color: black;
     }
+    
     .content{
         display: flex;
         flex-direction: column;
@@ -132,6 +140,7 @@
         border-radius: 40px;
         border: none;
         font-size: 20px;
+        
     }
     .custom-indicators {
         position: absolute;
@@ -150,14 +159,13 @@
         margin-top: 10px;
     }
     .slider-text {
-        display: flex;
-        justify-content: center;
-        padding-top: 20px;
-        /* text-align: justify; */
         width: 100%;
+        text-align: left;
         font-size: xx-large;
         font-weight: bold;
+        color: black;
     }
+    
     .content{
         display: flex;
         flex-direction: column;

@@ -14,37 +14,44 @@ const SalesCard = () => {
             <div className="row m-0">
               <div className="col-md-6 col-sm-6 col-12 p-0">
                 <div className='img_positions'>
-                <img src={SalePic1} alt="" />
+                  <img src={SalePic1} alt="" />
                 </div>
               </div>
               <div className="col-md-6 col-sm-6 col-12 p-0 ps-2">
-                <div className='img_position mar'>
-                <img src={SalePic2} alt="" />
+                <div className='img_position'>
+                  <img src={SalePic2} alt="" />
                 </div>
               </div>
             </div>
-            <div className="row m-0 lower-left mt-2">
-              <div className="col-md-6 col-sm-6 col-6">
-                <img src={Cycle} alt="" style={{ width: "100%", height: "180px" }} />
-              </div>
-              <div className="col-md-6 col-sm-6 col-6">
-                <div className='d-flex flex-column justify-content-center align-item-center texts'>
-                  <div className='cycle_style'>
-                    Find the best watch for you!
-                  </div>
-                  <div style={{ color: '#0F75BC', fontSize: '25px', fontWeight: 'bold', textAlign: 'center' }}>
-                    Smart
-                  </div>
-                  <div style={{ color: '#F7941D', fontSize: '25px', fontWeight: 'bold', textAlign: 'center' }}>
-                    Watches
+            <div className="row m-0 mt-3">
+              <div className="col lefts p-0">
+                <div className='lower-left'>
+                  <div className="row m-0">
+                    <div className="col-md-6 col-sm-6 col-6">
+                      <img src={Cycle} alt="" style={{ width: "100%", height: "180px" }} />
+                    </div>
+                    <div className="col-md-6 col-sm-6 col-6">
+                      <div className='d-flex flex-column justify-content-center align-item-center texts'>
+                        <div className='cycle_style'>
+                          Find the best watch for you!
+                        </div>
+                        <div style={{ color: '#0F75BC', fontSize: '25px', fontWeight: 'bold', textAlign: 'center' }}>
+                          Smart
+                        </div>
+                        <div style={{ color: '#F7941D', fontSize: '25px', fontWeight: 'bold', textAlign: 'center' }}>
+                          Watches
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
           <div className="col-lg-4 d-none d-lg-block p-0 ps-2">
             <div className='right-left'>
-                <img src={TwoWatches} alt="" style={{ width: "100%" }} />
+              <img src={TwoWatches} alt="" style={{ width: "100%" }} />
             </div>
           </div>
         </div>
