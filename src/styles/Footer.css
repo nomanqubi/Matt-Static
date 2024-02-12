@@ -10,11 +10,14 @@
       text-align: center;
   }
 
-  .footer-search {
-      /* display: flex;
-      justify-content: space-between;
-      width: 90%;
-      margin: auto; */
+  .our-information{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .our-contact{
+    display: flex;
+    justify-content: center;
   }
 
   .Footer-search-container {
@@ -98,6 +101,14 @@
       }
       .footer_text{
         text-align: center;
+      }
+      .our-information{
+        display: flex;
+        justify-content: flex-start;
+      }
+      .our-contact{
+        display: flex;
+        justify-content: flex-start;
       }
   }
 

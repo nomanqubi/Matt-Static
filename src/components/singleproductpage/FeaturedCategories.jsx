@@ -1,48 +1,61 @@
 import React, { useState } from 'react';
 import '../../styles/Products.css';
 import productData from '../../data/productsData';
+import Card from 'react-bootstrap/Card';
 import { useNavigate } from 'react-router-dom';
+import { category } from '../../data/categoryPic';
+import { IoIosArrowRoundForward } from 'react-icons/io';
 
 const Products = () => {
   const navigate = useNavigate();
-  const first8Products = productData.slice(0, 4);
 
-  const [selectedCategory, setSelectedCategory] = useState('Featured');
-
-  const categoryData = {
-    'Featured': first8Products,
+  const handleSeeAllClick = () => {
+    window.scrollTo(0, 0);
+    navigate("/products");
   };
 
-  const handleCategoryClick = (category) => {
-    setSelectedCategory(category);
-  };
   const handleBuyNowClick = (productId) => {
     window.scrollTo(0, 0);
     navigate(`/product/${productId}`);
   };
 
   return (
-    <div className='featured-product-container' style={{height:'500px'}}>
-      <div className="list-items">
-        <ul className='d-flex list-styling'>
-          <div className='text-left d-flex'>
-          <li onClick={() => handleCategoryClick('Featured')}>Featured</li>
+    <>
+      <div className="container mt-5">
+        <div className="row">
+          <div className="col">
+            <div className='d-flex justify-content-between'>
+              <h4>Products</h4>
+              <div className='links_styling'>
+                <ul>
+                  <li onClick={() => handleSeeAllClick()} className='see-all'>See all<IoIosArrowRoundForward /></li>
+                </ul>
+              </div>
+            </div>
+            <hr className='products-hr' />
           </div>
-        </ul>
+        </div>
+        <div className="row">
+          {category.map((item, index) => (
+            <div key={index} className="col-lg-3 pb-3">
+              <Card>
+                <div className='ps-3 pe-3 pt-3 pb-3 d-flex flex-column justify-content-center align-item-center'>
+                  <img src={item.pic} className='image-gallery' />
+                  <div className='d-flex justify-content-between mt-2'>
+                    <h3 className='pt-1' style={{ textAlign: 'center', color: 'black', fontSize: '15px', fontWeight: 'bold', margin: "0px" }}>{item.name}</h3>
+                    <span className="price">{item.price}</span>
+                  </div>
+                  <p style={{ height: "80px" }}>{item.description}</p>
+                  <div className='d-flex justify-content-center align-item-center'>
+                    <button className="buy-button" onClick={() => handleBuyNowClick(item.id)}>Buy Now</button>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          ))}
+        </div>
       </div>
-      <hr className='products-hr' />
-      <div className="products">
-        {categoryData[selectedCategory].map((product) => (
-          <div key={product.id} className="product-item">
-            <img src={product.pic} alt='dull' height={130} width={40} className='image-gallery'/>
-            <h3 style={{ textAlign: 'center', color: 'black', fontSize: '15px', fontWeight: 'bold' }}>{product.name}</h3>
-            <p>{product.description}</p>
-            <span className="price">{product.price}</span>
-            <button className="buy-button" onClick={() => handleBuyNowClick(product.id)}>Buy Now</button>
-          </div>
-        ))}
-      </div>
-    </div>
+    </>
   );
 }
 

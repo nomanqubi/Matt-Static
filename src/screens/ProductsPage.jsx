@@ -1,5 +1,5 @@
 import React from 'react'
-import AllProducts from '../components/productsPageComponent/AllProducts'
+import Products from '../components/HomePageComponents/HomePageProducts'
 import ProductsPageSlider from '../components/productsPageComponent/ProductsPageSlider'
 import ProductsCategory from '../components/productsPageComponent/ProductsCategory'
 
@@ -8,7 +8,7 @@ const ProductsPage = () => {
     <div>
      <ProductsPageSlider />
       <ProductsCategory />
-      <AllProducts/>
+      <Products />
     </div>
   )
 }

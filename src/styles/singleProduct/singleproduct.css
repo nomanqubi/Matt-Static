@@ -1,10 +1,11 @@
-.single-product-detail-main-div{
+.single-product-detail-main-div {
     width: 90%;
     height: 550px;
     display: flex;
-    margin:3rem auto;
+    margin: 3rem auto;
 }
-.single-product-image{
+
+.single-product-image {
     width: 50%;
     height: 550px;
     display: flex;
@@ -13,15 +14,22 @@
     align-items: center;
     margin: auto;
     /* background-color: #F3F3F3; */
-    
+
 }
+
+.cards_product {
+    background: #F5F5F5;
+    height: 100px;
+    border-radius: 10px;
+}
+
 .detail-div {
     width: 50%;
     height: 550px;
     padding: 0px 10px;
 }
 
-td{
+td {
     width: 150px;
     height: 50px;
 }
@@ -35,7 +43,7 @@ td:first-child {
     text-align: left;
 }
 
-td:nth-child(2){
+td:nth-child(2) {
     width: 500px;
     font-family: Inter;
     font-size: 18px;
@@ -44,17 +52,19 @@ td:nth-child(2){
     letter-spacing: 0em;
     text-align: left;
 }
-table button{
-    margin: 0px 7px;
+
+table button {
+    width: 100px;
+    height: 40px;
+    margin: 0px 7px 0px 0px;
     font-family: Inter;
     font-size: 15px;
     font-weight: 400;
-    padding:7px 30px;
     border: none;
     border-radius: 5px;
-        
 }
-table input{
+
+table input {
     width: 40px;
     height: 40px;
     outline: none;
@@ -62,7 +72,7 @@ table input{
     border: none;
 }
 
-.order-btn{
+.order-btn {
     background-color: #F7941D;
     padding: 12px 5px 12px 5px;
     border-radius: 5px;
@@ -72,60 +82,51 @@ table input{
     margin-top: 15px;
 }
 
-.order-btn:hover{
+.order-btn:hover {
     background-color: #0F75BC;
 }
 
 @media (max-width: 700px) {
-    .single-product-detail-main-div{
+    .single-product-detail-main-div {
         flex-direction: column;
         height: 850px;
-        
+
     }
+
     .single-product-image {
         width: 100%;
         height: 250px;
     }
-    .single-product-image img{
+
+    .single-product-image img {
         transform: scale(0.5);
     }
-    
-    .detail-div{
+
+    .detail-div {
         width: 100%;
         height: 600px;
     }
-    }
+}
 
-    .singlefooterimage{
-        height: 60px;
-        padding: 15px;
-        border-radius: 50%;
-        background-color: #F3F3F3;
-    }
+.singlefooterimage {
+    height: 60px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #F3F3F3;
+}
 
-    /* Define your CSS styles for larger screens */
+/* Define your CSS styles for larger screens */
 .footer-container {
     display: flex;
     justify-content: space-around;
-  }
+}
 
-    @media (max-width: 768px) {
-        .footer-container {
-            margin: 20px 0px 20px 0px;
-          flex-direction: column;
-          align-items: center;
-        }
-        .footer-item{
-            margin-bottom: 20px;
-        }
-      }
-
-.description-text{
+.description-text {
     text-align: left;
 }
 
 
-.single-product-container{
+.single-product-container {
     width: 90%;
     margin: auto;
     justify-content: space-between;
@@ -134,36 +135,63 @@ table input{
     margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    .single-product-container{
-      height: 1350px !important;
-    }
-}
-@media screen and (max-width: 767px) {
-    .single-product-container{
-      height: auto;
-    }
-}
-@media screen and (max-width: 1120px) {
-    .single-product-container{
-      margin-top: 40px !important;
-      height: auto;
 
-    }
-  
-  }
-
-  .size-button:hover{
-    color:white;
+.size-button:hover {
+    color: white;
     background-color: #F7941D;
 
-  }
-  .size-button-medium:hover{
-    color:black;
+}
+
+.size-button-medium:hover {
+    color: black;
     background-color: #F3F3F3;
 
-  }
-  .size-button-medium{
-    color:white;
+}
+
+.size-button-medium {
+    color: white;
     background-color: #F7941D;
-  }
+}
+
+.card_product_img{
+    width: 100%;
+    height: 540px;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .card_product_img{
+        width: 100%;
+        height: 560px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .option{
+        margin-top: 10px;
+    }
+    .card_product_img{
+        width: 100%;
+        height: 560px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .products_res{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .products_res{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .products_res {
+        margin-top: 20px;
+    }
+    .option{
+        margin-top: 10px;
+    }
+}

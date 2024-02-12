@@ -27,6 +27,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col">
+            <div className='our-contact'>
             <div className='box'>
               <h4>Contact</h4>
               <ul style={{padding: "0px"}}>
@@ -36,8 +37,11 @@ const Footer = () => {
                 <li>Call Us: +1 245 8948-4343</li>
               </ul>
             </div>
+            </div>
+            
           </div>
           <div className="col">
+            <div className='our-information'>
             <div className='box'>
               <h4>Our Information</h4>
               <ul style={{padding: "0px"}}>
@@ -46,6 +50,9 @@ const Footer = () => {
                 <li>Support Page</li>
               </ul>
             </div>
+            </div>
+
+            
           </div>
         </div>
       </div>

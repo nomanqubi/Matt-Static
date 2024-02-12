@@ -1,32 +1,20 @@
 import React, { useState } from 'react';
 import '../../styles/Products.css';
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import productData from '../../data/productsData';
 import { useNavigate } from 'react-router-dom';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import { category } from '../../data/categoryPic';
 
 const Products = () => {
+
   const navigate = useNavigate();
+
   const handleSeeAllClick = () => {
     window.scrollTo(0, 0);
     navigate("/products");
   };
-  const first8Products = productData.slice(0, 8);
-  const first4Products = category.slice(0, 8);
 
-  const [selectedCategory, setSelectedCategory] = useState('New Arrival');
-
-  const categoryData = {
-    'New Arrival': first8Products,
-    'Featured': first4Products,
-    'Top Selling': first8Products,
-  };
-
-  const handleCategoryClick = (category) => {
-    setSelectedCategory(category);
-  };
   const handleBuyNowClick = (productId) => {
     window.scrollTo(0, 0);
     navigate(`/product/${productId}`);
@@ -49,18 +37,18 @@ const Products = () => {
           </div>
         </div>
         <div className="row">
-          {categoryData[selectedCategory].map((product) => (
-            <div key={product.id} className="col-lg-3 pb-3">
+          {productData.map((item, index) => (
+            <div className="col-lg-3 pb-3" key={index}>
               <Card>
                 <div className='ps-3 pe-3 pt-3 pb-3 d-flex flex-column justify-content-center align-item-center'>
-                  <img src={product.pic} className='image-gallery' />
+                  <img src={item.images[0]} className='image-gallery' />
                   <div className='d-flex justify-content-between mt-2'>
-                    <h3 className='pt-1' style={{ textAlign: 'center', color: 'black', fontSize: '15px', fontWeight: 'bold', margin: "0px" }}>{product.name}</h3>
-                    <span className="price">{product.price}</span>
+                    <h3 className='pt-1' style={{ textAlign: 'center', color: 'black', fontSize: '15px', fontWeight: 'bold', margin: "0px" }}>{item.name}</h3>
+                    <span className="price">{item.price}</span>
                   </div>
-                  <p style={{ height: "80px" }}>{product.description}</p>
+                  <p style={{ height: "80px" }}>{item.description}</p>
                   <div className='d-flex justify-content-center align-item-center'>
-                    <button className="buy-button" onClick={() => handleBuyNowClick(product.id)}>Buy Now</button>
+                    <button className="buy-button" onClick={() => handleBuyNowClick(item.id)}>Buy Now</button>
                   </div>
                 </div>
               </Card>

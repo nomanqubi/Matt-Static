@@ -4,7 +4,7 @@
     background-color: rgb(236, 249, 255);
 }
 
-.content{
+.slider_content{
     display: flex;
     align-items: center;
 }
@@ -122,6 +122,7 @@
         font-size: xx-large;
         font-weight: bold;
         color: black;
+        margin-top: 40px;
     }
     
     .content{
@@ -149,14 +150,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 400px;
+        top: 390px;
         left: 0;
       }
 }
 
 @media (max-width: 576px)  {
     .img {
-        margin-top: 10px;
+        margin-top: 30px;
     }
     .slider-text {
         width: 100%;
@@ -164,6 +165,7 @@
         font-size: xx-large;
         font-weight: bold;
         color: black;
+        margin-top: 40px;
     }
     
     .content{
@@ -190,7 +192,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 450px;
+        top: 380px;
         left: 0;
       }
 }

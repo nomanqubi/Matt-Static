@@ -27,7 +27,7 @@ const Slider = () => {
           <Carousel.Item interval={3000}>
             <div className="container mt-4 slider-container">
               <div className="row">
-                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 content">
+                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 slider_content">
                   <div className='d-flex flex-column ps-5 pe-3'>
                     <div className='slider-text'>
                       We Have exists simply to meet a need or want and build a connection.
@@ -44,7 +44,7 @@ const Slider = () => {
           <Carousel.Item interval={3000}>
             <div className="container mt-4 slider-container">
               <div className="row">
-                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 content">
+                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 slider_content">
                   <div className='d-flex flex-column ps-5 pe-3'>
                     <div className='slider-text'>
                       We Have exists simply to meet a need or want and build a connection.
@@ -61,7 +61,7 @@ const Slider = () => {
           <Carousel.Item interval={3000}>
             <div className="container mt-4 slider-container">
               <div className="row">
-                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 content">
+                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 slider_content">
                   <div className='d-flex flex-column ps-5 pe-3'>
                     <div className='slider-text'>
                       We Have exists simply to meet a need or want and build a connection.
@@ -78,7 +78,7 @@ const Slider = () => {
           <Carousel.Item interval={3000}>
             <div className="container mt-4 slider-container">
               <div className="row">
-                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 content">
+                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 slider_content">
                   <div className='d-flex flex-column ps-5 pe-3'>
                     <div className='slider-text'>
                       We Have exists simply to meet a need or want and build a connection.
@@ -95,7 +95,7 @@ const Slider = () => {
           <Carousel.Item interval={3000}>
             <div className="container mt-4 slider-container">
               <div className="row">
-                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 content">
+                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 p-0 slider_content">
                   <div className='d-flex flex-column ps-5 pe-3'>
                     <div className='slider-text'>
                       We Have exists simply to meet a need or want and build a connection.
