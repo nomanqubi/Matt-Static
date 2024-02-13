@@ -29,7 +29,7 @@ const Nav = () => {
             <div className="container-fluid nav">
                 <div className="container">
                     <div className="row">
-                        <div className="col p-0">
+                        <div className="col">
                             <div className="nav-wrapper">
                                 <div className='d-flex'>
                                     <button className="toggle_btn" onClick={handleShow}>
@@ -41,9 +41,9 @@ const Nav = () => {
                                     </button>
                                     <nav className="nav-list">
                                         <ul>
-                                            <li onClick={() => navigate("/")}>Home</li>
-                                            <li onClick={() => navigate("/about")}>About</li>
-                                            <li onClick={() => navigate("/contact")}>Contact</li>
+                                            <li style={{borderRight: "1px solid white"}} onClick={() => navigate("/")}>Home</li>
+                                            <li style={{borderRight: "1px solid white"}} onClick={() => navigate("/about")}>About</li>
+                                            <li style={{borderRight: "1px solid white"}} onClick={() => navigate("/contact")}>Contact</li>
                                             <li onClick={() => navigate("/products")}>Products</li>
                                         </ul>
                                     </nav>

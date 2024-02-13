@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { useSearchParams } from 'react-router-dom';
 import FeatureCategories from './../components/HomePageComponents/FeatureCategories'
 import Testimonials from '../components/HomePageComponents/Testimonials'
 import Slider from '../components/HomePageComponents/Slider'
@@ -8,13 +9,15 @@ import Products from '../components/HomePageComponents/HomePageProducts'
 
 
 const HomePage = () => {
+
+
   return (
    <>
-   <Slider />
-   <SalesCard />
-   <Products />
-   <FeatureCategories />
-   <Testimonials />
+   <Slider  />
+   <SalesCard  />
+   <Products  />
+   <FeatureCategories  />
+   <Testimonials  />
    </>
   )
 }

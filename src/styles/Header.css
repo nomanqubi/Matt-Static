@@ -7,9 +7,6 @@
     margin: auto;
   }
   
-  .logo {
-    margin-right: 10px;
-  }
 
   .search-container {
     background-color: #FFF;
@@ -81,13 +78,14 @@
     align-items: center;
     text-align: center;
   }
+}
 
+@media (max-width: 576px) {
   .logo {
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
   }
-
-  .search-container {
-    width: 100%;
-    padding: 3px 10px;
-  }
+  /* .search-box {
+    width: 50%;
+  } */
 }

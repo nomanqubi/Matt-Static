@@ -9,7 +9,7 @@ const QuotePage = () => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h1 style={{ textAlign: "center" }}>Get a Quote</h1>
+              <h1 style={{ textAlign: "center", color: 'white' }}>Get a Quote</h1>
             </div>
           </div>
         </div>

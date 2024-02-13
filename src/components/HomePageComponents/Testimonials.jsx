@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import '../../styles/Testimonial.css'
 import Testimonial1 from '../../images/testimonial1.png'
 import Testimonial2 from '../../images/testimonial2.png'
@@ -6,12 +6,21 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Testimonials = () => {
 
   const [sliderRef, setSliderRef] = useState(null);
   const [forwardClicked, setForwardClicked] = useState(false);
   const [backwardClicked, setBackwardClicked] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+        offset: 300,
+        duration: 1000,
+    });
+}, []); // Run this effect only once when the component mounts
 
   const settings = {
     slidesToShow: 2,
@@ -77,12 +86,12 @@ const Testimonials = () => {
   return (
     <>
       <div className="container mt-5 pb-3">
-        <div className="row">
+        <div className="row" data-aos="fade-up">
           <div className="col">
             <h1 className='latest-reviews'>Our Latest Reviews</h1>
           </div>
         </div>
-        <div className="row mt-3">
+        <div className="row mt-3" data-aos="fade-down">
           <Slider ref={(slider) => setSliderRef(slider)} {...settings}>
             <div className="col-md-6">
               <div className='card-1 ps-3 pe-3 pt-3 pb-3 ms-3'>

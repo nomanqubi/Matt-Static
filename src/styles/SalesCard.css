@@ -20,6 +20,7 @@
 .img_position{
     display: flex;
     justify-content: flex-end;
+    /* padding-left: 1rem; */
 }
 
 .right-left{
@@ -42,6 +43,21 @@
         justify-content: center;
         align-items: center;
     }
+    .img_position{
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .img_position{
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .img_position{
+        margin-left: 1rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -54,13 +70,16 @@
     .img_positions{
         display: flex;
         justify-content: center;
+        margin-left: none;
     }
       .lefts{
         display: flex;
         justify-content: center;
       }
       .lefts .lower-left {
-        max-width: 70%;
-        margin: 0 auto; /* Center horizontally */
+        width: 370px;
+      }
+      .salesportion{
+        padding-left: 0.5rem;
       }
 }
