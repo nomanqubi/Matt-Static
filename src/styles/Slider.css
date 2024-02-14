@@ -9,6 +9,11 @@
     align-items: center;
 }
 
+.slider_option{
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
 .slider-text {
     width: 65%;
     text-align: left;
@@ -118,7 +123,7 @@
     }
     .slider-text {
         width: 100%;
-        text-align: left;
+        text-align: justify;
         font-size: xx-large;
         font-weight: bold;
         color: black;
@@ -161,7 +166,7 @@
     }
     .slider-text {
         width: 100%;
-        text-align: left;
+        text-align: justify;
         font-size: xx-large;
         font-weight: bold;
         color: black;

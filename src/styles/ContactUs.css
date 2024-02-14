@@ -26,6 +26,13 @@
   /* width: 80%; */
 }
 
+.input_quote_style{
+  width: 100%;
+  padding: 10px;
+  background: white;
+  border-radius: 5px;
+}
+
 .contact-us-heading {
   color: black;
   font-weight: bold;
@@ -39,14 +46,10 @@
 }
 
 input,
-textarea {
+textarea, select {
   width: 100%;
   padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
   border-radius: 5px;
-  outline: none;
-  background-color: #F5F5F5;
   border: none;
 }
 
@@ -103,6 +106,9 @@ textarea {
   margin-top: 1rem;
 }
 
+.options{
+  color: grey;
+}
 
 
 @media (max-width: 992px) {

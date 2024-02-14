@@ -68,18 +68,22 @@
         width: 100%;
     }
     .img_positions{
-        display: flex;
-        justify-content: center;
+        /* display: flex; */
+        /* justify-content: center; */
         margin-left: none;
+    }
+    .img_card{
+        width: 100%;
     }
       .lefts{
         display: flex;
         justify-content: center;
       }
       .lefts .lower-left {
-        width: 370px;
+        width: 100%;
       }
       .salesportion{
-        padding-left: 0.5rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
       }
 }

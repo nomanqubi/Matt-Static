@@ -24,12 +24,12 @@ const SalesCard = () => {
             <div className="row m-0">
               <div className="col-md-6 col-sm-6 col-12 p-0">
                 <div className='img_positions'>
-                  <img src={SalePic1} alt="" />
+                  <img src={SalePic1} alt="" className='img_card'/>
                 </div>
               </div>
               <div className="col-md-6 col-sm-6 col-12 p-0">
                 <div className='img_position'>
-                  <img src={SalePic2} alt="" />
+                  <img src={SalePic2} alt="" className='img_card'/>
                 </div>
               </div>
             </div>

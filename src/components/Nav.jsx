@@ -35,20 +35,20 @@ const Nav = () => {
                                     <button className="toggle_btn" onClick={handleShow}>
                                         <IoReorderThree />
                                     </button>
-                                    <button className="all-categories-button">
-                                        <FaBars className="icon" />
-                                        All Categories
+                                    <button className="all-categories-button" onClick={() => navigate("/")}>
+                                        {/* <FaBars className="icon" /> */}
+                                        Home
                                     </button>
                                     <nav className="nav-list">
                                         <ul>
-                                            <li style={{borderRight: "1px solid white"}} onClick={() => navigate("/")}>Home</li>
+                                            {/* <li style={{borderRight: "1px solid white"}} onClick={() => navigate("/")}>Home</li> */}
                                             <li style={{borderRight: "1px solid white"}} onClick={() => navigate("/about")}>About</li>
                                             <li style={{borderRight: "1px solid white"}} onClick={() => navigate("/contact")}>Contact</li>
                                             <li onClick={() => navigate("/products")}>Products</li>
                                         </ul>
                                     </nav>
                                 </div>
-                                <Link to='/qoute'><button className="quote-button" Link='/qoute'>Request Quote</button></Link>
+                                <Link to='/quote'><button className="quote-button" Link='/quote'>Request Quote</button></Link>
                             </div>
                             <Offcanvas show={show} onHide={handleClose} className style={{ width: "250px" }}>
                                 <img src={Logo} alt="" className="logo mt-3" style={{ width: "100%" }} />

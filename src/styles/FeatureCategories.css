@@ -27,8 +27,6 @@
 .images {
     display: flex;
     justify-content: space-between;
-
-    ;
 }
 
 .images img {
@@ -44,13 +42,26 @@
 }
 
 
-@media (min-width: 601px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     .product-card {
         width: 40%;
     }
+    .images img {
+        width: 85px;
+        height: 107px;
+    }
+}
 
+@media (min-width: 768px) and (max-width: 992px) {
     .images img {
         width: 60px;
+        height: 107px;
+    }
+}
+
+@media (max-width: 576px) {
+    .images img {
+        width: 80px;
         height: 80px;
     }
 }

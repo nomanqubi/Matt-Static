@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 import ContactPage from './screens/ContactPage';
 import ProductsPage from './screens/ProductsPage';
 import SingleProductPage from './screens/SingleProductPage';
-import QoutePage from './screens/QoutePage';
+import QuotePage from './screens/QoutePage';
 import { Search } from './screens/Search';
 
 const NotFound = () => {
@@ -41,7 +41,7 @@ const App = () => {
         <Route path="/search/:query" element={<Search />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/product/:productId" element={<SingleProductPage />} />
-        <Route path="/qoute" element={<QoutePage />} />
+        <Route path="/quote/:productId?" element={<QuotePage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
